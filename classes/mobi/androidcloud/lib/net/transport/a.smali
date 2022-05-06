@@ -1,0 +1,666 @@
+.class public final enum Lmobi/androidcloud/lib/net/transport/a;
+.super Ljava/lang/Enum;
+.source "SourceFile"
+
+# interfaces
+.implements Lmobi/androidcloud/lib/net/transport/c;
+
+
+# static fields
+.field public static final enum ix:Lmobi/androidcloud/lib/net/transport/a;
+
+
+# instance fields
+.field private final iA:Lmobi/androidcloud/lib/net/transport/b;
+
+.field private iy:[I
+
+.field private iz:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 4
+    new-instance v0, Lmobi/androidcloud/lib/net/transport/a;
+
+    const-string v1, "INSTANCE"
+
+    invoke-direct {v0, v1, v2}, Lmobi/androidcloud/lib/net/transport/a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lmobi/androidcloud/lib/net/transport/a;->ix:Lmobi/androidcloud/lib/net/transport/a;
+
+    .line 3
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Lmobi/androidcloud/lib/net/transport/a;
+
+    sget-object v1, Lmobi/androidcloud/lib/net/transport/a;->ix:Lmobi/androidcloud/lib/net/transport/a;
+
+    aput-object v1, v0, v2
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .registers 6
+
+    .prologue
+    const/16 v1, 0x100
+
+    .line 3
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 6
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_20
+
+    iput-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iy:[I
+
+    .line 26
+    new-array v0, v1, [I
+
+    fill-array-data v0, :array_224
+
+    iput-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iz:[I
+
+    .line 46
+    new-instance v0, Lmobi/androidcloud/lib/net/transport/b;
+
+    iget-object v1, p0, Lmobi/androidcloud/lib/net/transport/a;->iy:[I
+
+    iget-object v2, p0, Lmobi/androidcloud/lib/net/transport/a;->iz:[I
+
+    invoke-direct {v0, v1, v2}, Lmobi/androidcloud/lib/net/transport/b;-><init>([I[I)V
+
+    iput-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iA:Lmobi/androidcloud/lib/net/transport/b;
+
+    return-void
+
+    .line 6
+    nop
+
+    :array_20
+    .array-data 4
+        0x24
+        0x9a
+        0xfe
+        0x7f
+        0x57
+        0xe9
+        0x70
+        0x73
+        0xfc
+        0x4d
+        0x39
+        0xfd
+        0xc2
+        0x6b
+        0xfa
+        0x11
+        0x8d
+        0x85
+        0xa4
+        0x65
+        0xcd
+        0x91
+        0xa2
+        0x68
+        0x5b
+        0xdd
+        0xfb
+        0x2
+        0xf4
+        0xda
+        0xcf
+        0xb
+        0xf8
+        0x7d
+        0x27
+        0xf9
+        0x9b
+        0x25
+        0xde
+        0x28
+        0xd
+        0x8a
+        0x4a
+        0xdc
+        0xbe
+        0x23
+        0x8b
+        0x55
+        0x40
+        0x18
+        0x5c
+        0x74
+        0x99
+        0x29
+        0xbc
+        0xb4
+        0x2b
+        0x9e
+        0x6d
+        0xaa
+        0xc5
+        0x5f
+        0x3c
+        0x35
+        0x53
+        0xa5
+        0xe3
+        0x4
+        0xb0
+        0xb6
+        0x76
+        0x8c
+        0x54
+        0xce
+        0x2d
+        0x58
+        0xd0
+        0x80
+        0x1c
+        0xd9
+        0x97
+        0x1a
+        0xc1
+        0x50
+        0xf3
+        0xf1
+        0xbd
+        0x38
+        0xf0
+        0x26
+        0x2e
+        0x33
+        0xff
+        0x1f
+        0x4f
+        0x78
+        0x1
+        0xd3
+        0x51
+        0xc
+        0xf
+        0xdf
+        0xe2
+        0x3b
+        0xa8
+        0x6
+        0x44
+        0x63
+        0xef
+        0xbb
+        0xe4
+        0xb1
+        0xe
+        0x14
+        0x45
+        0x13
+        0x7
+        0x7e
+        0x2c
+        0x49
+        0xaf
+        0x93
+        0x82
+        0x6f
+        0x15
+        0xb2
+        0x3f
+        0xca
+        0xcb
+        0x41
+        0x59
+        0x75
+        0xd2
+        0x90
+        0xee
+        0xed
+        0xdb
+        0xeb
+        0xf7
+        0x6e
+        0x81
+        0xe6
+        0x9c
+        0x43
+        0x6c
+        0x92
+        0x20
+        0xe1
+        0xa3
+        0x7b
+        0x66
+        0x98
+        0xa
+        0x16
+        0x86
+        0x88
+        0xb7
+        0x6a
+        0x2f
+        0xc9
+        0x30
+        0x4b
+        0xc8
+        0xe0
+        0xec
+        0x34
+        0x3a
+        0x77
+        0x2a
+        0x3d
+        0x47
+        0xa0
+        0x1e
+        0xb8
+        0xc7
+        0xac
+        0x8f
+        0xa6
+        0xbf
+        0xc0
+        0x22
+        0xd7
+        0xc3
+        0x95
+        0x17
+        0x37
+        0x84
+        0x72
+        0x12
+        0x94
+        0x19
+        0x4c
+        0xe5
+        0x96
+        0x89
+        0xd5
+        0x48
+        0x69
+        0x46
+        0xb9
+        0xd1
+        0x5a
+        0xa7
+        0x71
+        0xea
+        0xb3
+        0x8e
+        0xa1
+        0xe7
+        0xd4
+        0x32
+        0xab
+        0x3
+        0x21
+        0xad
+        0x9
+        0x5e
+        0x7a
+        0x83
+        0x5
+        0xb5
+        0x62
+        0xba
+        0x10
+        0x5d
+        0x67
+        0x1d
+        0x79
+        0x64
+        0x4e
+        0xd8
+        0xa9
+        0xf2
+        0x31
+        0x7c
+        0xcc
+        0xe8
+        0xae
+        0xf6
+        0x9f
+        0x56
+        0x61
+        0xd6
+        0x9d
+        0x0
+        0x52
+        0x1b
+        0x87
+        0x42
+        0xc4
+        0x3e
+        0xf5
+        0x36
+        0xc6
+        0x60
+        0x8
+    .end array-data
+
+    .line 26
+    :array_224
+    .array-data 4
+        0xf4
+        0x60
+        0x1b
+        0xd4
+        0x43
+        0xdb
+        0x69
+        0x74
+        0xff
+        0xd7
+        0x98
+        0x1f
+        0x63
+        0x28
+        0x70
+        0x64
+        0xdf
+        0xf
+        0xbc
+        0x73
+        0x71
+        0x7c
+        0x99
+        0xb8
+        0x31
+        0xbe
+        0x51
+        0xf6
+        0x4e
+        0xe2
+        0xac
+        0x5d
+        0x92
+        0xd5
+        0xb4
+        0x2d
+        0x0
+        0x25
+        0x59
+        0x22
+        0x27
+        0x35
+        0xa8
+        0x38
+        0x76
+        0x4a
+        0x5a
+        0x9e
+        0xa0
+        0xe9
+        0xd2
+        0x5b
+        0xa5
+        0x3f
+        0xfc
+        0xb9
+        0x57
+        0xa
+        0xa6
+        0x67
+        0x3e
+        0xa9
+        0xfa
+        0x7e
+        0x30
+        0x81
+        0xf8
+        0x8f
+        0x6a
+        0x72
+        0xc6
+        0xaa
+        0xc4
+        0x77
+        0x2a
+        0xa1
+        0xbf
+        0x9
+        0xe5
+        0x5e
+        0x53
+        0x62
+        0xf5
+        0x40
+        0x48
+        0x2f
+        0xf0
+        0x4
+        0x4b
+        0x82
+        0xc9
+        0x18
+        0x32
+        0xe0
+        0xd8
+        0x3d
+        0xfe
+        0xf1
+        0xdd
+        0x6b
+        0xe4
+        0x13
+        0x96
+        0xe1
+        0x17
+        0xc5
+        0x9d
+        0xd
+        0x90
+        0x3a
+        0x8b
+        0x7b
+        0x6
+        0xcb
+        0xbb
+        0x7
+        0x33
+        0x83
+        0x46
+        0xa7
+        0x5f
+        0xe3
+        0xd9
+        0x95
+        0xea
+        0x21
+        0x75
+        0x3
+        0x4d
+        0x8c
+        0x7a
+        0xda
+        0xba
+        0x11
+        0x9a
+        0xf7
+        0x9b
+        0xc2
+        0x29
+        0x2e
+        0x47
+        0x10
+        0xce
+        0xb0
+        0x85
+        0x15
+        0x91
+        0x79
+        0xbd
+        0xb7
+        0xc1
+        0x50
+        0x97
+        0x34
+        0x1
+        0x24
+        0x8e
+        0xf3
+        0x39
+        0xef
+        0xab
+        0xcf
+        0x16
+        0x94
+        0x12
+        0x41
+        0xb1
+        0xca
+        0x68
+        0xe7
+        0x3b
+        0xd3
+        0xaf
+        0xd6
+        0xed
+        0x78
+        0x44
+        0x6f
+        0x7d
+        0xcd
+        0x37
+        0xdc
+        0x45
+        0x9c
+        0xad
+        0xc7
+        0xde
+        0x6d
+        0x36
+        0x56
+        0x2c
+        0xb2
+        0xb3
+        0x52
+        0xc
+        0xb6
+        0xf9
+        0x3c
+        0xfd
+        0xae
+        0xa2
+        0x9f
+        0x7f
+        0x80
+        0xeb
+        0x14
+        0x49
+        0x1e
+        0x4c
+        0xc8
+        0x84
+        0x61
+        0xd1
+        0xc3
+        0xf2
+        0xb5
+        0xe6
+        0x4f
+        0x1d
+        0x88
+        0x2b
+        0x19
+        0x26
+        0x65
+        0xa3
+        0x93
+        0x66
+        0x42
+        0x6e
+        0xc0
+        0x8d
+        0xd0
+        0xec
+        0x5
+        0xcc
+        0x89
+        0xa4
+        0x87
+        0x86
+        0x6c
+        0x58
+        0x55
+        0xe8
+        0x54
+        0x1c
+        0xfb
+        0xee
+        0x8a
+        0x20
+        0x23
+        0xe
+        0x1a
+        0x8
+        0xb
+        0x2
+        0x5c
+    .end array-data
+.end method
+
+
+# virtual methods
+.method public ap(I)I
+    .registers 3
+
+    .prologue
+    .line 61
+    iget-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iA:Lmobi/androidcloud/lib/net/transport/b;
+
+    invoke-virtual {v0, p1}, Lmobi/androidcloud/lib/net/transport/b;->ap(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public aq(I)I
+    .registers 3
+
+    .prologue
+    .line 66
+    iget-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iA:Lmobi/androidcloud/lib/net/transport/b;
+
+    invoke-virtual {v0, p1}, Lmobi/androidcloud/lib/net/transport/b;->aq(I)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public b(B)B
+    .registers 3
+
+    .prologue
+    .line 51
+    iget-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iA:Lmobi/androidcloud/lib/net/transport/b;
+
+    invoke-virtual {v0, p1}, Lmobi/androidcloud/lib/net/transport/b;->b(B)B
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public c(B)B
+    .registers 3
+
+    .prologue
+    .line 56
+    iget-object v0, p0, Lmobi/androidcloud/lib/net/transport/a;->iA:Lmobi/androidcloud/lib/net/transport/b;
+
+    invoke-virtual {v0, p1}, Lmobi/androidcloud/lib/net/transport/b;->c(B)B
+
+    move-result v0
+
+    return v0
+.end method
